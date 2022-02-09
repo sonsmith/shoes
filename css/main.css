@@ -23,9 +23,9 @@ body {
 }
 
 .container {
-  width: 1280px;
+  width: 1340px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 30px;
 }
 
 /* nav */
@@ -45,6 +45,10 @@ body {
   height: 60px;
   position: relative;
   margin-bottom: 40px;
+}
+
+.bars {
+  display: none;
 }
 
 .logo {
@@ -91,6 +95,11 @@ body {
   letter-spacing: -3px;
   line-height: 1;
 }
+
+.slide__text h2.mo_title {
+  display: none;
+}
+
 .slide__text p {
   font-size: 18px;
   margin: 15px 0 18px;
@@ -132,6 +141,238 @@ body {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
 }
+
 .product_01 .box a {
   font-size: 30px;
+}
+
+/* product_02 */
+.product_02 {
+  padding-bottom: 125px;
+}
+
+.product_02 h3 {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 66px;
+}
+
+.product_02 .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.product_02 .box .card {
+}
+.product_02 .box .card .photo {
+  width: 306px;
+  height: 306px;
+  background: #c4c4c4;
+}
+.product_02 .box .card .info {
+  padding-top: 16px;
+}
+.product_02 .box .card .info h4 {
+  font-size: 18px;
+}
+.product_02 .box .card .info .price {
+  font-size: 18px;
+}
+
+.product_02 .bar_wrapper {
+  background-color: #c4c4c4;
+  height: 7px;
+}
+.product_02 .bar_wrapper .bar {
+  background-color: #111;
+  height: 7px;
+  width: 306px;
+}
+
+/* join */
+.join {
+  margin-top: 25px;
+  margin-bottom: 110px;
+}
+
+.join_info {
+  display: flex;
+  flex-direction: column;
+  width: 257px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.join_info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+}
+.join_info p {
+  font-size: 18px;
+  margin: 14px 0 26px;
+}
+.join_info .btn {
+  width: 256px;
+  height: 64px;
+  background-color: #fff;
+  font-size: 18px;
+  border: 1px solid #111;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+.footer {
+  background-color: #111;
+  padding-top: 66px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.footer__menu {
+  display: flex;
+}
+
+.bottom__menu {
+  margin-right: auto;
+  display: flex;
+}
+
+.bottom__menu > li {
+  width: 214px;
+}
+
+.bottom__menu > li > a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.bottom__menu ul a {
+  font-size: 14px;
+  display: block;
+  padding: 6px 0;
+}
+
+.social h4 {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.social .icons {
+  display: flex;
+  gap: 16px;
+  color: #111;
+  font-size: 20px;
+  padding-top: 8px;
+}
+.social .icons a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social .icons i {
+}
+
+.copyright {
+  margin-top: 120px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: initial;
+  }
+
+  /* nav */
+  .top {
+    padding: 0 20px;
+    padding-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .nav {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.86);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 120px;
+  }
+
+  .nav a {
+    color: #fff;
+    padding: 14px 0;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .bars {
+    display: block;
+    font-size: 28px;
+    z-index: 2;
+    color: #fff;
+  }
+
+  .logo {
+    font-size: 18px;
+    top: 80%;
+  }
+
+  .top_menu {
+    gap: 10px;
+  }
+
+  .slide {
+    height: 600px;
+    margin-bottom: 68px;
+    background: url(../images/shoes_m.png) no-repeat;
+    background-position: center top;
+    background-size: 120%;
+  }
+
+  .slide__text {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .slide__text h2.mo_title {
+    display: block;
+  }
+
+  .slide__text h2.pc_title {
+    display: none;
+  }
+
+  .product_01,
+  .product_02,
+  .join,
+  .footer {
+    display: none;
+  }
 }
